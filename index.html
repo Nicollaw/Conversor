@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Conversor Decimal</title>
 </head>
@@ -10,17 +13,24 @@
 
     <div class="container">
         <header>
-            <h1>CONVERSOR DECIMAL</h1>
+            <h1>Metric Hub</h1>
         </header>
-        <nav>
-            <button class="button-nav" type="button" >Numeros</button>
-            <button class="button-nav" type="button">Temperatura</button>
-            <button class="button-nav" type="button">Moeda</button>
-        </nav>
+     
         <main>
-            <section id="numeros">
-                <input class="input-1" type="number" placeholder="digite um numero">
-                <button type="button">converter</button>
+            <h2 class="title">O que vamos converter hoje?</h2>
+            <section class="menu menu-hide">
+                <button class="button-nav" data-target="numeros" type="button">Numeros</button>
+                <button class="button-nav" data-target="temperatura" type="button">Temperatura</button>
+                <button class="button-nav" data-target="moeda" type="button">Moeda</button>
+                <button class="button-nav" data-target="velocidade" type="button">Velocidade</button>
+                <button class="button-nav" data-target="peso" type="button">Peso</button>
+                <button class="button-nav" data-target="armazenamento" type="button">Armazenamento</button>
+                <button class="button-nav" data-target="tempo" type="button">Tempo</button>
+                <button class="button-nav" data-target="comprimento" type="button">Comprimento</button>
+            </section>
+
+            <section id="numeros" class="hide">
+                <input class="input-number" type="number" placeholder="numero">
                 <h2>Binario</h2>
                 <p id="resultado-binario">-</p>
                 <h2>Octal</h2>
@@ -30,18 +40,16 @@
                 <h2>Romano</h2>
                 <p id="resultado-romano">-</p>
             </section>
-            <section id="temperatura">
+            <section id="temperatura" class="hide">
                 <h2>Celsius</h2>
                 <input class="input-1" type="number" placeholder="Celsius">
-                <p id="resultado-celsius">-</p>
                 <h2>Kelvin</h2>
                 <input class="input-1" type="number" placeholder="Kelvin">
-                <p id="resultado-kelvin">-</p>
                 <h2>Fahrenheit</h2>
                 <input class="input-1" type="number" placeholder="Fahrenheit">
-                <p id="resultado-fahrenheit">-</p>
             </section>
         </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
