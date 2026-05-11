@@ -18,7 +18,7 @@
      
         <main>
             <h2 class="title">O que vamos converter hoje?</h2>
-            <section class="menu menu-hide">
+            <section class="menu menu-ativo">
                 <button class="button-nav" data-target="numeros" type="button">Numeros</button>
                 <button class="button-nav" data-target="temperatura" type="button">Temperatura</button>
                 <button class="button-nav" data-target="moeda" type="button">Moeda</button>
@@ -30,7 +30,9 @@
             </section>
 
             <section id="numeros" class="hide">
-                <input class="input-number" type="number" placeholder="numero">
+                <button class="back-menu" data-target="" type="button">Voltar</button>
+                <button id="converter-btn" type="button">Converter</button>
+                <input  id="input-btn-number" class="input-number" type="number" placeholder="numero">
                 <h2>Binario</h2>
                 <p id="resultado-binario">-</p>
                 <h2>Octal</h2>
@@ -40,7 +42,9 @@
                 <h2>Romano</h2>
                 <p id="resultado-romano">-</p>
             </section>
+
             <section id="temperatura" class="hide">
+                <button class="back-menu" data-target="" type="button">Voltar</button>
                 <h2>Celsius</h2>
                 <input class="input-1" type="number" placeholder="Celsius">
                 <h2>Kelvin</h2>
@@ -48,6 +52,36 @@
                 <h2>Fahrenheit</h2>
                 <input class="input-1" type="number" placeholder="Fahrenheit">
             </section>
+            <section id="moeda" class="hide">
+                <button class="back-menu" data-target="" type="button">Voltar</button>
+            </section>
+            <section id="velocidade" class="hide">
+                <button class="back-menu" data-target="" type="button">Voltar</button>
+            </section>
+            <section id="peso" class="hide">
+                <button class="back-menu" data-target="" type="button">Voltar</button>
+            </section>
+            <section id="armazenamento" class="hide">
+                <button class="back-menu" data-target="" type="button">Voltar</button>
+            </section>
+            <section id="tempo" class="hide">
+                <button class="back-menu" data-target="" type="button">Voltar</button>
+            </section>
+            <section id="comprimento" class="hide">
+                <button class="back-menu" data-target="" type="button">Voltar</button>
+            </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         </main>
     </div>
     <script src="script.js"></script>
