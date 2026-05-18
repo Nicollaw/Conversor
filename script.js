@@ -121,44 +121,62 @@ document.getElementById('input-kg').addEventListener('input', function (){
 document.getElementById('input-g').addEventListener('input', function (){  
     const g = Number.parseFloat(document.getElementById('input-g').value)
     document.getElementById('input-kg').value = g / 1000;
-    document.getElementById('input-mg').value = (g / 1000) / 1000000;
-    document.getElementById('input-t').value = (g / 1000) * 1000;
-    document.getElementById('input-lb').value = (g / 1000) / 2.20462;
-    document.getElementById('input-oz').value = (g / 1000) / 35.274;
+    document.getElementById('input-mg').value = (g / 1000) * 1000000;
+    document.getElementById('input-t').value = (g / 1000) / 1000;
+    document.getElementById('input-lb').value = (g / 1000) * 2.20462;
+    document.getElementById('input-oz').value = (g / 1000) * 35.274;
 })
 
 document.getElementById('input-mg').addEventListener('input', function (){  
     const mg = Number.parseFloat(document.getElementById('input-mg').value)
-    document.getElementById('input-kg').value = mg * 1000000;
-    document.getElementById('input-g').value = (mg * 1000000) / 1000;
-    document.getElementById('input-t').value = (mg * 1000000) * 1000;
-    document.getElementById('input-lb').value = (mg * 1000000) / 2.20462;
-    document.getElementById('input-oz').value = (mg * 1000000) / 35.274;
+    document.getElementById('input-kg').value = mg / 1000000;
+    document.getElementById('input-g').value = (mg / 1000000) * 1000;
+    document.getElementById('input-t').value = (mg / 1000000) / 1000;
+    document.getElementById('input-lb').value = (mg / 1000000) * 2.20462;
+    document.getElementById('input-oz').value = (mg / 1000000) * 35.274;
 })
 
 document.getElementById('input-t').addEventListener('input', function (){  
     const t = Number.parseFloat(document.getElementById('input-t').value)
-    document.getElementById('input-kg').value = t / 1000;
-    document.getElementById('input-g').value = (t / 1000) / 1000000
-    document.getElementById('input-mg').value = (t / 1000) / 1000;
-    document.getElementById('input-lb').value = (t / 1000) / 2.20462;
-    document.getElementById('input-oz').value = (t / 1000) / 35.274;
+    document.getElementById('input-kg').value = t * 1000;
+    document.getElementById('input-g').value = (t * 1000) * 1000
+    document.getElementById('input-mg').value = (t * 1000) * 1000000;
+    document.getElementById('input-lb').value = (t * 1000) * 2.20462;
+    document.getElementById('input-oz').value = (t * 1000) * 35.274;
 })
 
 document.getElementById('input-lb').addEventListener('input', function (){  
     const lb = Number.parseFloat(document.getElementById('input-lb').value)
     document.getElementById('input-kg').value = lb / 2.20462;
-    document.getElementById('input-g').value = (lb / 2.20462) / 1000;
-    document.getElementById('input-mg').value = (lb / 2.20462) / 1000000;
-    document.getElementById('input-t').value = (lb / 2.20462) * 1000;
-    document.getElementById('input-oz').value = (lb / 2.20462) / 35.274;
+    document.getElementById('input-g').value = (lb / 2.20462) * 1000;
+    document.getElementById('input-mg').value = (lb / 2.20462) * 1000000;
+    document.getElementById('input-t').value = (lb / 2.20462) / 1000;
+    document.getElementById('input-oz').value = (lb / 2.20462) * 35.274;
 })
 
 document.getElementById('input-oz').addEventListener('input', function (){  
     const oz = Number.parseFloat(document.getElementById('input-oz').value)
     document.getElementById('input-kg').value = oz / 35.274;
-    document.getElementById('input-g').value = (oz / 35.274) / 1000
-    document.getElementById('input-mg').value = (oz / 35.274) / 1000000;
-    document.getElementById('input-t').value = (oz / 35.274) * 1000;
-    document.getElementById('input-lb').value = (oz / 35.274) / 2.20462;
+    document.getElementById('input-g').value = (oz / 35.274) * 1000
+    document.getElementById('input-mg').value = (oz / 35.274) * 1000000;
+    document.getElementById('input-t').value = (oz / 35.274) / 1000;
+    document.getElementById('input-lb').value = (oz / 35.274) * 2.20462;
+})
+
+document.getElementById('input-b').addEventListener('input', function (){  
+    const b = Number.parseFloat(document.getElementById('input-b').value)
+    document.getElementById('input-bit').value = (b * 8).toFixed(0);
+    document.getElementById('input-kb').value = (b / 1024).toFixed(4);
+    document.getElementById('input-mb').value = (b  / 1024**2).toFixed(6);
+    document.getElementById('input-gb').value = (b / 1024**3).toFixed(8);
+    document.getElementById('input-tb').value = (b  / 1024**4).toFixed(10);
+})
+
+document.getElementById('input-b').addEventListener('input', function (){  
+    const b = Number.parseFloat(document.getElementById('input-b').value)
+    document.getElementById('input-bit').value = (b * 8).toFixed(0);
+    document.getElementById('input-kb').value = (b / 1024).toFixed(4);
+    document.getElementById('input-mb').value = (b  / 1024**2).toFixed(6);
+    document.getElementById('input-gb').value = (b / 1024**3).toFixed(8);
+    document.getElementById('input-tb').value = (b  / 1024**4).toFixed(10);
 })
